@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            background: url('backgn.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #f9a825;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: #cccccc;
+            transition: color 0.3s ease;
+        }
+
+        .star:hover,
+        .star.selected {
+            color: #f9a825;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            resize: none;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>We hope you enjoyed your workout session. Please rate your experience and provide feedback.</p>
+
+        <div class="rating">
+            <span class="star" onclick="selectStar(1)">&#9733;</span>
+            <span class="star" onclick="selectStar(2)">&#9733;</span>
+            <span class="star" onclick="selectStar(3)">&#9733;</span>
+            <span class="star" onclick="selectStar(4)">&#9733;</span>
+            <span class="star" onclick="selectStar(5)">&#9733;</span>
+        </div>
+        <textarea id="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <script>
+        let selectedRating = 0;
+
+        function selectStar(rating) {
+            selectedRating = rating;
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+
+        function submitFeedback() {
+            const feedback = document.getElementById('feedback').value;
+            if (selectedRating === 0) {
+                alert("Please select a rating before submitting.");
+                return;
+            }
+            alert(`Thank you for your feedback!\nRating: ${selectedRating}\nFeedback: ${feedback}`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('backgn.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            text-align: right;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav div {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(240, 232, 232, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: rgba(67, 48, 48, 0.8);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .workout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .workout-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .details-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .workout-details .card-title {
+            color: #2563eb;
+        }
+
+        .precautions .card-title {
+            color: #dc2626;
+        }
+
+        .health-details .card-title {
+            color: #7c3aed;
+        }
+
+        .card ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .precautions li {
+            color: #dc2626;
+        }
+
+        .health-details li {
+            color: #7c3aed;
+        }
+
+        .alert-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .finish-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .finish-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .finish-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="getstarted.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="user.html">User Update</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+
+        <h1>Thursday - Rest or Light Cardio (Age: 36-60)</h1>
+
+        <div class="workout-grid">
+            <div class="image-section">
+                <img src="https://plus.unsplash.com/premium_photo-1664474675019-c987ddd3e41e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UmVzdCUyMG9yJTIwbGlnaHQlMjBjYXJkaW8lMjBneW0lMjB3b3Jrb3V0fGVufDB8fDB8fHww"
+                    alt="Thursday workout" id="workout-image">
+            </div>
+
+            <div class="details-section">
+                <div class="card workout-details">
+                    <h2 class="card-title">Workout Details</h2>
+                    <ul id="workout-details-list">
+                        <li>Rest day: Focus on active recovery with light stretches or yoga</li>
+                        <li>Optional light cardio: 20-30 minutes of walking or cycling at an easy pace</li>
+                        <li>Practice deep breathing exercises to relax</li>
+                        <li>Engage in activities that promote mobility, such as tai chi or pilates</li>
+                    </ul>
+                </div>
+                <div class="card precautions">
+                    <h2 class="card-title">
+                        <svg class="alert-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-15v6m0 4v-2" />
+                        </svg>
+                        Precautions
+                    </h2>
+                    <ul id="precautions-list">
+                        <li>Listen to your body and avoid overexertion</li>
+                        <li>If doing light cardio, maintain a low heart rate (50-60% of max)</li>
+                        <li>Avoid strenuous activities to allow for proper recovery</li>
+                        <li>Wear comfortable clothing and shoes for light cardio</li>
+                        <li>Stay hydrated and avoid prolonged inactivity</li>
+                    </ul>
+                </div>
+                <div class="card health-details">
+                    <h2 class="card-title">Health Details</h2>
+                    <ul id="health-details-list">
+                        <li>Encourages muscle recovery and reduces fatigue</li>
+                        <li>Helps maintain flexibility and joint mobility</li>
+                        <li>Improves blood circulation without taxing the body</li>
+                        <li>Promotes mental relaxation and reduces stress</li>
+                        <li>Total activity duration: 20-40 minutes, as per comfort</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finish-btn-container">
+        <button class="finish-btn" onclick="redirectToEndPage()">Finish</button>
+    </div>
+
+    <script>
+        function redirectToEndPage() {
+            window.location.href = "end.html";
+        }
+    </script>
+</body>
+
+</html>

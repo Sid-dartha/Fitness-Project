@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('backgn.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            text-align: right;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav div {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(240, 232, 232, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: rgba(67, 48, 48, 0.8);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .workout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .workout-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .details-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .workout-details .card-title {
+            color: #2563eb;
+        }
+
+        .precautions .card-title {
+            color: #dc2626;
+        }
+
+        .food-guidelines .card-title {
+            color: #16a34a;
+        }
+
+        .health-details .card-title {
+            color: #7c3aed;
+        }
+
+        .card ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .precautions li {
+            color: #dc2626;
+        }
+
+        .food-guidelines li {
+            color: #16a34a;
+        }
+
+        .health-details li {
+            color: #7c3aed;
+        }
+
+        .alert-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .finish-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .finish-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .finish-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="getstarted.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="user.html">User Update</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+
+        <h1>Tuesday - Back and Biceps (Age: 14-35)</h1>
+
+        <div class="workout-grid">
+            <div class="image-section">
+                <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=1973&auto=format&fit=crop"
+                    alt="Tuesday workout" id="workout-image">
+            </div>
+
+            <div class="details-section">
+                <div class="card workout-details">
+                    <h2 class="card-title">Workout Details</h2>
+                    <ul id="workout-details-list">
+                        <li>Pull-ups (Assisted if necessary): 3 sets x 6-10 reps</li>
+                        <li>Barbell Rows (Start light): 4 sets x 8-10 reps</li>
+                        <li>Lat Pulldowns: 3 sets x 10-12 reps</li>
+                        <li>Dumbbell Deadlifts: 3 sets x 10 reps (ensure proper form)</li>
+                        <li>Bicep Curls (Focus on controlled motion): 3 sets x 12-15 reps</li>
+                        <li>Hammer Curls: 2 sets x 12-15 reps</li>
+                    </ul>
+                </div>
+                <div class="card precautions">
+                    <h2 class="card-title">
+                        <svg class="alert-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-15v6m0 4v-2" />
+                        </svg>
+                        Precautions
+                    </h2>
+                    <ul id="precautions-list">
+                        <li>Use weights that are manageable, focusing on proper form</li>
+                        <li>Ensure back is straight during rows to avoid injury</li>
+                        <li>Warm up adequately, especially for younger participants</li>
+                        <li>Don’t lift too heavy too soon; build gradually</li>
+                        <li>Stop if you experience any discomfort or strain</li>
+                    </ul>
+                </div>
+                <div class="card food-guidelines">
+                    <h2 class="card-title">Food Guidelines</h2>
+                    <ul id="food-guidelines-list">
+                        <li>Include lean proteins like eggs, chicken, or tofu post-workout</li>
+                        <li>Stay hydrated—drink at least 2-3 liters of water daily</li>
+                        <li>For younger participants, include calcium-rich snacks</li>
+                        <li>Avoid sugary drinks; opt for natural juices or coconut water</li>
+                        <li>Include healthy fats like avocado or nuts</li>
+                    </ul>
+                </div>
+                <div class="card health-details">
+                    <h2 class="card-title">Health Details</h2>
+                    <ul id="health-details-list">
+                        <li>Target heart rate: 60-75% of max for effective fat burn</li>
+                        <li>Rest 60-90 seconds between sets</li>
+                        <li>Calories burned: 400-600 (varies by intensity)</li>
+                        <li>Focus on building strength and endurance gradually</li>
+                        <li>Total workout duration: 45-60 minutes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finish-btn-container">
+        <button class="finish-btn" onclick="redirectToEndPage()">Finish</button>
+    </div>
+
+    <script>
+        function redirectToEndPage() {
+            window.location.href = "end.html";
+        }
+    </script>
+</body>
+
+</html>

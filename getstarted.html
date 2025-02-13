@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .get-started-box {
+            text-align: center;
+            background-color: #462c2c;
+            color: white;
+            padding: 60px 120px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .get-started-button {
+            margin-top: 25px;
+            padding: 10px 80px;
+            font-size: 18px;
+            color: white;
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .get-started-button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="get-started-box">
+        <h2>Welcome User!</h2>
+        <button onclick="redirectToUserPage()" class="get-started-button">Get Started</button>
+    </div>
+
+    <script>
+        function redirectToUserPage() {
+            window.location.href = "user.html";
+        }
+    </script>
+</body>
+
+</html>

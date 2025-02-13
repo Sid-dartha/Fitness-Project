@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(backgn.jpg);
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            text-align: right;
+        }
+
+        nav div {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(240, 232, 232, 0.2);
+        }
+
+        .info-box {
+            background-color: rgba(43, 24, 24, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 500px;
+            margin: 50px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 45px 30px;
+            background-color: rgb(67, 48, 48, 0.8);
+            border: 100px;
+            border-radius: 25px;
+            margin: 40px;
+            padding: 120px;
+
+        }
+
+        .box {
+            background-color: rgba(131, 103, 103, 0.7);
+            border-radius: 10px;
+            padding: 60px;
+            height: 300px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .box img {
+            width: 100%;
+            height: 90%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="getstarted.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="user.html">User Update</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <a href="36-60monday.html">
+                <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Monday Workout">
+            </a>
+            <p>Monday - Chest and triceps</p>
+        </div>
+        <div class="box">
+            <a href="36-60tuesday.html">
+                <img src="https://images.unsplash.com/photo-1680761827444-9214a9c3129f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmFjayUyMGFuZCUyMGJpY2Vwc3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Tuesday Workout">
+            </a>
+            <p>Tuesday - Back and biceps</p>
+        </div>
+        <div class="box">
+            <a href="36-60wednesday.html">
+                <img src="https://plus.unsplash.com/premium_photo-1664478159939-5242198cdcb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fExlZ3MlMjBhbmQlMjBzaG91bGRlcnMlMjBneW0lMjB3b3Jrb3V0fGVufDB8fDB8fHww"
+                    alt="Wednesday Workout">
+            </a>
+            <p>Wednesday - Legs and shoulders</p>
+        </div>
+        <div class="box">
+            <a href="36-60thursday.html">
+                <img src="https://plus.unsplash.com/premium_photo-1664474675019-c987ddd3e41e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UmVzdCUyMG9yJTIwbGlnaHQlMjBjYXJkaW8lMjBneW0lMjB3b3Jrb3V0fGVufDB8fDB8fHww"
+                    alt="Thursday Workout">
+            </a>
+            <p>Thursday - Rest or light cardio</p>
+        </div>
+        <div class="box">
+            <a href="36-60friday.html">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fEZ1bGwlMjBib2R5JTIwc3RyZW5ndGglMjB0cmFpbmluZyUyMGd5bSUyMHdvcmtvdXQlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D"
+                    alt="Friday Workout">
+            </a>
+            <p>Friday - Full body strength training</p>
+        </div>
+        <div class="box">
+            <a href="36-60saturday.html">
+                <img src="https://plus.unsplash.com/premium_photo-1664474697070-2678dbfacec1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FyZGlvJTIwZ3ltJTIwd29ya291dHN8ZW58MHx8MHx8fDA%3D"
+                    alt="Saturday Workout">
+            </a>
+            <p>Saturday - HIIT or cardio</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    <style>
+        body {
+            background: url(backgn.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            text-align: right;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav div {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(240, 232, 232, 0.2);
+        }
+
+        .help-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(67, 48, 48, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .help-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .help-item h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        .help-item p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .help-item a {
+            text-decoration: none;
+            color: #03a9f4;
+        }
+
+        .help-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="getstarted.html">Home</a>
+            <a href="help.html">Help</a>
+            <a href="user.html">User Update</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="help-container">
+        <h1>Help - Menu Bar Options</h1>
+
+        <div class="help-item">
+            <h2>Home</h2>
+            <p>
+                Click on the <strong>Home</strong> link to navigate to the main page, where you can find all the workout
+                options and details for your selected age group.
+            </p>
+        </div>
+
+        <div class="help-item">
+            <h2>Help</h2>
+            <p>
+                You are currently on the <strong>Help</strong> page. This section provides guidance and answers to
+                common
+                questions about the navigation menu and features of the website.
+            </p>
+        </div>
+
+        <div class="help-item">
+            <h2>User Update</h2>
+            <p>
+                The <strong>User Update</strong> link allows you to update your user details, such as age, fitness
+                goals, and preferences. Ensure you save any changes before navigating away.
+            </p>
+        </div>
+
+        <div class="help-item">
+            <h2>Login</h2>
+            <p>
+                Use the <strong>Login</strong> link to access your account. If you don't have an account yet, you can
+                register by following the prompts on the login page.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
