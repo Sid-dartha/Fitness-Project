@@ -8,6 +8,7 @@
     <style>
         body {
             background: url(backgn.jpg);
+            font-family: Arial, sans-serif;
         }
 
         nav {
@@ -71,6 +72,54 @@
             width: 100%;
             height: 90%;
             border-radius: 10px;
+        }
+
+        @media screen and (min-width: 384px) {
+
+            nav {
+                padding: 13px;
+                text-align: center;
+            }
+
+            nav div {
+                display: inline-block;
+            }
+
+            nav a {
+                font-size: 15px;
+                padding: 10px 10px;
+                border-radius: 5px;
+            }
+
+            .container {
+                display: grid;
+                width: 150px;
+                align-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                align-items: center;
+                gap: 35px;
+                border: 120px;
+                border-radius: 30px;
+                margin: 20px;
+                padding: 90px;
+            }
+
+            .box {
+                font-size: 15px;
+                margin: 10px;
+                padding: 20px 20px;
+                border-radius: 10px;
+                height: 250px;
+                width: 200px;
+                text-align: center;
+            }
+
+            .box img {
+                width: 100%;
+                height: 80%;
+                border-radius: 12px;
+            }
         }
     </style>
 </head>
